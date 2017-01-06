@@ -134,4 +134,4 @@ var anotherPetName: String?
 
 
 
-//: Checkout the solution branch, git co solution and come back to this spot to see a link to the solution
+//: Checkout the solution [here](https://github.com/learn-co-curriculum/swift-optionalsFun-lab/blob/solution/Optionals.playground/Pages/solution.xcplaygroundpage/Contents.swift)
