@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//String
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+//String: Optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// It doens't have one - nil
 
 
 
@@ -45,8 +45,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Howell"
 
-
+//Still String: Optional
 
 
 
@@ -56,6 +57,11 @@ var petName: String?
 // write your code here
 
 
+//I expect and error, a nil, or a ?
+
+print(petName)
+
+//"Optional("Howell")"
 
 
 
@@ -65,7 +71,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if petName == nil {
+    print("There is no pet name.")
+} else {
+    print(petName)
+}
 
 
 
@@ -77,8 +87,9 @@ var petName: String?
  */
 // write your code here
 
-
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,10 +100,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
-
-
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+} else {
+    print(anotherPetName)
+}
 
 
 /*: question9
@@ -100,8 +112,13 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+if anotherPetName != nil {
+    if let anotherPetName = anotherPetName {
+        print(anotherPetName)
+    } else {
+        print("anotherPetName has no value")
+    }
+}
 
 
 
@@ -112,7 +129,10 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
-
+let dandy: String?
+dandy = "dan"
+print(dandy)
+//Optional("dan")
 
 
 
@@ -126,7 +146,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+//let scotty: String? = nil
+//scotty = "scott"
+//Xcode freaks out: many warnings at once
 
 
 
